@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/an-app-for-a-dog/static/css/main.32c94421.chunk.css",
+    "main.js": "/an-app-for-a-dog/static/js/main.7a3679af.chunk.js",
+    "main.js.map": "/an-app-for-a-dog/static/js/main.7a3679af.chunk.js.map",
+    "runtime-main.js": "/an-app-for-a-dog/static/js/runtime-main.c801f1de.js",
+    "runtime-main.js.map": "/an-app-for-a-dog/static/js/runtime-main.c801f1de.js.map",
+    "static/js/2.5f4e8f5e.chunk.js": "/an-app-for-a-dog/static/js/2.5f4e8f5e.chunk.js",
+    "static/js/2.5f4e8f5e.chunk.js.map": "/an-app-for-a-dog/static/js/2.5f4e8f5e.chunk.js.map",
+    "index.html": "/an-app-for-a-dog/index.html",
+    "precache-manifest.c716f5a3cc9c30951adc0e47531ec63e.js": "/an-app-for-a-dog/precache-manifest.c716f5a3cc9c30951adc0e47531ec63e.js",
+    "service-worker.js": "/an-app-for-a-dog/service-worker.js",
+    "static/css/main.32c94421.chunk.css.map": "/an-app-for-a-dog/static/css/main.32c94421.chunk.css.map",
+    "static/js/2.5f4e8f5e.chunk.js.LICENSE.txt": "/an-app-for-a-dog/static/js/2.5f4e8f5e.chunk.js.LICENSE.txt",
+    "static/media/unnamed.jpg": "/an-app-for-a-dog/static/media/unnamed.79c33d54.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c801f1de.js",
+    "static/js/2.5f4e8f5e.chunk.js",
+    "static/css/main.32c94421.chunk.css",
+    "static/js/main.7a3679af.chunk.js"
+  ]
+}
