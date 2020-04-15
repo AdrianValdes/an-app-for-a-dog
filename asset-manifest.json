@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/an-app-for-a-dog/static/css/main.f47104b7.chunk.css",
+    "main.css": "/an-app-for-a-dog/static/css/main.7495235d.chunk.css",
     "main.js": "/an-app-for-a-dog/static/js/main.eed0eb5a.chunk.js",
     "main.js.map": "/an-app-for-a-dog/static/js/main.eed0eb5a.chunk.js.map",
     "runtime-main.js": "/an-app-for-a-dog/static/js/runtime-main.c801f1de.js",
@@ -8,9 +8,9 @@
     "static/js/2.333412ec.chunk.js": "/an-app-for-a-dog/static/js/2.333412ec.chunk.js",
     "static/js/2.333412ec.chunk.js.map": "/an-app-for-a-dog/static/js/2.333412ec.chunk.js.map",
     "index.html": "/an-app-for-a-dog/index.html",
-    "precache-manifest.45057fa3408f63c632ff2114c04bb216.js": "/an-app-for-a-dog/precache-manifest.45057fa3408f63c632ff2114c04bb216.js",
+    "precache-manifest.9dc46c4b88946cb781285b961500fda8.js": "/an-app-for-a-dog/precache-manifest.9dc46c4b88946cb781285b961500fda8.js",
     "service-worker.js": "/an-app-for-a-dog/service-worker.js",
-    "static/css/main.f47104b7.chunk.css.map": "/an-app-for-a-dog/static/css/main.f47104b7.chunk.css.map",
+    "static/css/main.7495235d.chunk.css.map": "/an-app-for-a-dog/static/css/main.7495235d.chunk.css.map",
     "static/js/2.333412ec.chunk.js.LICENSE.txt": "/an-app-for-a-dog/static/js/2.333412ec.chunk.js.LICENSE.txt",
     "static/media/central-icon.png": "/an-app-for-a-dog/static/media/central-icon.8a77d569.png",
     "static/media/central-image-darkmode.png": "/an-app-for-a-dog/static/media/central-image-darkmode.5c9e0d19.png",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.c801f1de.js",
     "static/js/2.333412ec.chunk.js",
-    "static/css/main.f47104b7.chunk.css",
+    "static/css/main.7495235d.chunk.css",
     "static/js/main.eed0eb5a.chunk.js"
   ]
 }
