@@ -1,10 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import Form from './Form';
+import Navbar from './Navbar';
 import MoviesList from './MoviesList';
-import Icon4 from './images/films-images/unnamed.jpg';
+import iconLigtMode from './images/films-images/central-icon.png';
+import iconDarkMode from './images/films-images/central-image-darkmode.png';
 function App() {
   const [movies, setMovies] = useState();
+  const [darkMode, setDarkMode] = useState(getInitialMode());
 
+  // Setting the dark mode in the local Storage
+  useEffect(() => {
+    localStorage.setItem('dark', JSON.stringify(darkMode));
+  }, [darkMode]);
+
+  //Getting the initial mode from the browser
+  function getInitialMode() {
+    const savedMode = JSON.parse(
+      localStorage.getItem(localStorage.getItem('dark'))
+    );
+    return savedMode || false;
+  }
+
+  //Fetching the movies from the API and updating the state.
   useEffect(() => {
     async function fetchData() {
       let response = await fetch(
@@ -18,10 +35,17 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <img src={Icon4} alt="" />
-      <Form />
-      {movies === undefined ? 'Wait' : <MoviesList movies={movies} />}
+    <div className={darkMode ? 'dark-mode' : 'ligt-mode'}>
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      <main className="main-container">
+        <img
+          src={darkMode ? iconDarkMode : iconLigtMode}
+          alt=""
+          className="main-icon"
+        />
+        {/*<Form />*/}
+        {!movies ? 'Wait' : <MoviesList movies={movies} />}
+      </main>
     </div>
   );
 }

@@ -1,0 +1,52 @@
+nav {
+  width: 100%;
+  display: flex;
+  background-color: #ff385c;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.toggle-button {
+  display: flex;
+  margin: 10px;
+}
+
+.label {
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50px;
+  height: 17px;
+  width: 35px;
+  padding: 0 3px;
+  transform: scale(1.5);
+}
+
+.ball {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  top: 1.5px;
+  left: 2px;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(17.5px);
+}
+
+.checkbox {
+  opacity: 0;
+}
+
+.icons {
+  display: inline-block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.navbar-icon {
+  max-height: 3rem;
+}

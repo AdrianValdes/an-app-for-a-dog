@@ -1,10 +1,19 @@
 import React from 'react';
 
+import MoviesListItem from './MoviesListItem';
+
 const MoviesList = ({ movies }) => {
-  if (movies) {
-    return movies.map((movie) => <li key={movie.id}>{movie.title}</li>);
-  }
-  return <div>Hellooo</div>;
+  return (
+    <ul className="movie-list">
+      {movies.map((movie) => (
+        <MoviesListItem key={movie.id} movie={movie} />
+      ))}
+    </ul>
+  );
 };
+
+/*MoviesList.propTypes = {
+ movies: PropTypes.arrayOf(PropTypes.object).isRequired,
+}*/
 
 export default MoviesList;
