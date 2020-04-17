@@ -1,31 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d3234a478205e0550f7d42568ac0e9df",
+    "revision": "02bf80348599e041250bd6ba73825122",
     "url": "/an-app-for-a-dog/index.html"
   },
   {
-    "revision": "c9b7a9bbe866d42707f2",
-    "url": "/an-app-for-a-dog/static/css/main.7495235d.chunk.css"
+    "revision": "74c4bb38ec1f35c7f69b",
+    "url": "/an-app-for-a-dog/static/css/main.091170a5.chunk.css"
   },
   {
-    "revision": "9c3be8e61150ece0d158",
-    "url": "/an-app-for-a-dog/static/js/2.333412ec.chunk.js"
+    "revision": "f8113655c3bd644d888a",
+    "url": "/an-app-for-a-dog/static/js/2.fe370167.chunk.js"
   },
   {
-    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/an-app-for-a-dog/static/js/2.333412ec.chunk.js.LICENSE.txt"
+    "revision": "c64c486544348f10a6d6c716950bc223",
+    "url": "/an-app-for-a-dog/static/js/2.fe370167.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c9b7a9bbe866d42707f2",
-    "url": "/an-app-for-a-dog/static/js/main.eed0eb5a.chunk.js"
+    "revision": "74c4bb38ec1f35c7f69b",
+    "url": "/an-app-for-a-dog/static/js/main.329eabaf.chunk.js"
   },
   {
     "revision": "b32825e1cfc3b8ad4501",
     "url": "/an-app-for-a-dog/static/js/runtime-main.c801f1de.js"
-  },
-  {
-    "revision": "8a77d569ea98b2c8e36d67b80121bc83",
-    "url": "/an-app-for-a-dog/static/media/central-icon.8a77d569.png"
   },
   {
     "revision": "5c9e0d19046c57a8b85697cafae44e31",
