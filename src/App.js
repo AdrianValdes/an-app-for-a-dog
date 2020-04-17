@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import Form from './Form';
-import Navbar from './Navbar';
-import MoviesList from './MoviesList';
-import iconLigtMode from './images/films-images/central-icon.png';
-import iconDarkMode from './images/films-images/central-image-darkmode.png';
+import Navbar from './components/Navbar';
+
+/* import icon from './images/films-images/central-image-darkmode.png'; */
+import { Route, Switch } from 'react-router-dom';
+import About from './components/About';
+import Topics from './components/Topics/Topics';
+import Home from './components/Home';
+import PeopleDetail from './components/Topics/People/PeopleDetail';
+import People from './components/Topics/People/People';
+import Movies from './components/Topics/Movies/Movies';
+import MovieDetail from './components/Topics/Movies/MovieDetail';
+
 function App() {
-  const [movies, setMovies] = useState();
   const [darkMode, setDarkMode] = useState(getInitialMode());
 
   // Setting the dark mode in the local Storage
@@ -21,31 +28,23 @@ function App() {
     return savedMode || false;
   }
 
-  //Fetching the movies from the API and updating the state.
-  useEffect(() => {
-    async function fetchData() {
-      let response = await fetch(
-        'https://ghibliapi.herokuapp.com/films'
-      ).then((response) => response.json());
-
-      setMovies(response);
-    }
-
-    fetchData();
-  }, []);
-
   return (
     <div className={darkMode ? 'dark-mode' : 'ligt-mode'}>
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <main className="main-container">
-        <img
-          src={darkMode ? iconDarkMode : iconLigtMode}
-          alt=""
-          className="main-icon"
-        />
-        {/*<Form />*/}
-        {!movies ? 'Wait' : <MoviesList movies={movies} />}
-      </main>
+      <Switch>
+        <Route path="/about" component={About} />
+        <Route path="/topics" exact component={Topics} />
+
+        <Route path="/people/:id" component={PeopleDetail} />
+        <Route path="/people" component={People} />
+
+        <Route path="/movie/:id" component={MovieDetail} />
+        <Route path="/movies" exact component={Movies} />
+
+        <Route exact to="/" component={Home} />
+
+        <main className="main-container">{/*<Form />*/}</main>
+      </Switch>
     </div>
   );
 }

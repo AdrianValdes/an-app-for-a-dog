@@ -1,9 +1,11 @@
 import React from 'react';
-import iconNavbarLight from './images/films-images/image-for-navbar6.png';
-import iconNavbarDark from './images/films-images/navbar-icon-darkmode.png';
+import { Link } from 'react-router-dom';
+
+import iconNavbarLight from '../images/films-images/image-for-navbar6.png';
+import iconNavbarDark from '../images/films-images/navbar-icon-darkmode.png';
 const Navbar = (props) => {
   const { darkMode, setDarkMode } = props;
-  console.log(props);
+
   return (
     <nav>
       <img
@@ -11,7 +13,19 @@ const Navbar = (props) => {
         alt="Navbar icon"
         className="navbar-icon"
       />
-      <div className="toggle-button">
+      <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to="/home">
+        <div className="navbar-children">Home</div>
+      </Link>
+      <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to="/about">
+        <div className="navbar-children"> About</div>
+      </Link>
+      <Link
+        style={{ color: 'inherit', textDecoration: 'inherit' }}
+        to="/topics"
+      >
+        <div className="navbar-children">Topics</div>
+      </Link>
+      <div className="toggle-button navbar-children">
         <input
           type="checkbox"
           className="checkbox"

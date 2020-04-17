@@ -2,8 +2,9 @@ nav {
   width: 100%;
   display: flex;
   background-color: #ff385c;
-  padding: 10px;
-  justify-content: space-between;
+  min-height: 10vh;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .toggle-button {
@@ -49,4 +50,9 @@ nav {
 
 .navbar-icon {
   max-height: 3rem;
+  margin-right: auto;
+}
+
+.navbar-children {
+  margin-right: 3em;
 }
