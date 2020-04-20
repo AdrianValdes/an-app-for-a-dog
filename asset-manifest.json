@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/an-app-for-a-dog/static/css/main.091170a5.chunk.css",
-    "main.js": "/an-app-for-a-dog/static/js/main.329eabaf.chunk.js",
-    "main.js.map": "/an-app-for-a-dog/static/js/main.329eabaf.chunk.js.map",
+    "main.css": "/an-app-for-a-dog/static/css/main.cadd76f5.chunk.css",
+    "main.js": "/an-app-for-a-dog/static/js/main.d1489f19.chunk.js",
+    "main.js.map": "/an-app-for-a-dog/static/js/main.d1489f19.chunk.js.map",
     "runtime-main.js": "/an-app-for-a-dog/static/js/runtime-main.c801f1de.js",
     "runtime-main.js.map": "/an-app-for-a-dog/static/js/runtime-main.c801f1de.js.map",
-    "static/js/2.fe370167.chunk.js": "/an-app-for-a-dog/static/js/2.fe370167.chunk.js",
-    "static/js/2.fe370167.chunk.js.map": "/an-app-for-a-dog/static/js/2.fe370167.chunk.js.map",
+    "static/js/2.2996757f.chunk.js": "/an-app-for-a-dog/static/js/2.2996757f.chunk.js",
+    "static/js/2.2996757f.chunk.js.map": "/an-app-for-a-dog/static/js/2.2996757f.chunk.js.map",
     "index.html": "/an-app-for-a-dog/index.html",
-    "precache-manifest.09a449fbc489f78cbbd09e31b6f8432d.js": "/an-app-for-a-dog/precache-manifest.09a449fbc489f78cbbd09e31b6f8432d.js",
+    "precache-manifest.06910962a739c7d3a9b2739ea8d6ddbb.js": "/an-app-for-a-dog/precache-manifest.06910962a739c7d3a9b2739ea8d6ddbb.js",
     "service-worker.js": "/an-app-for-a-dog/service-worker.js",
-    "static/css/main.091170a5.chunk.css.map": "/an-app-for-a-dog/static/css/main.091170a5.chunk.css.map",
-    "static/js/2.fe370167.chunk.js.LICENSE.txt": "/an-app-for-a-dog/static/js/2.fe370167.chunk.js.LICENSE.txt",
+    "static/css/main.cadd76f5.chunk.css.map": "/an-app-for-a-dog/static/css/main.cadd76f5.chunk.css.map",
+    "static/js/2.2996757f.chunk.js.LICENSE.txt": "/an-app-for-a-dog/static/js/2.2996757f.chunk.js.LICENSE.txt",
+    "static/media/People1.png": "/an-app-for-a-dog/static/media/People1.6628773c.png",
     "static/media/central-image-darkmode.png": "/an-app-for-a-dog/static/media/central-image-darkmode.5c9e0d19.png",
     "static/media/image-for-navbar6.png": "/an-app-for-a-dog/static/media/image-for-navbar6.22ae2874.png",
-    "static/media/navbar-icon-darkmode.png": "/an-app-for-a-dog/static/media/navbar-icon-darkmode.6a4c2f0d.png"
+    "static/media/navbar-icon-darkmode.png": "/an-app-for-a-dog/static/media/navbar-icon-darkmode.6a4c2f0d.png",
+    "static/media/topics.png": "/an-app-for-a-dog/static/media/topics.b34443e2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c801f1de.js",
-    "static/js/2.fe370167.chunk.js",
-    "static/css/main.091170a5.chunk.css",
-    "static/js/main.329eabaf.chunk.js"
+    "static/js/2.2996757f.chunk.js",
+    "static/css/main.cadd76f5.chunk.css",
+    "static/js/main.d1489f19.chunk.js"
   ]
 }
