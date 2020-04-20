@@ -6,7 +6,7 @@ import movies from './TopicsImages/topics.png';
 import './Topics.css';
 function Topics() {
   return (
-    <div className=" topics-left main-container topics">
+    <div className=" main-container topics">
       <h2 className="each-topic">
         <Link className="link-style" to="/people">
           People <br />
