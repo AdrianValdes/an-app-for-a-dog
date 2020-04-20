@@ -1,31 +1,55 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
+import { DarkModeContext } from '../DarkMode';
 import { Link } from 'react-router-dom';
-
 import iconNavbarLight from '../images/films-images/image-for-navbar6.png';
 import iconNavbarDark from '../images/films-images/navbar-icon-darkmode.png';
+import '../index.css';
 const Navbar = (props) => {
-  const { darkMode, setDarkMode } = props;
+  const darkMode = useContext(DarkModeContext);
+  const { setDarkMode } = props;
+  const [sideNavbar, setSideNavbar] = useState(false);
+
+  const handleNavbar = () => {
+    setSideNavbar(!sideNavbar);
+  };
 
   return (
     <nav>
-      <img
-        src={darkMode ? iconNavbarDark : iconNavbarLight}
-        alt="Navbar icon"
-        className="navbar-icon"
-      />
-      <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to="/home">
-        <div className="navbar-children">Home</div>
-      </Link>
-      <Link style={{ color: 'inherit', textDecoration: 'inherit' }} to="/about">
-        <div className="navbar-children"> About</div>
-      </Link>
-      <Link
-        style={{ color: 'inherit', textDecoration: 'inherit' }}
-        to="/topics"
+      <div>
+        <img
+          className="navbar-icon"
+          src={darkMode ? iconNavbarDark : iconNavbarLight}
+          alt="Navbar icon"
+        />
+      </div>
+      <ul
+        style={darkMode ? { backgroundColor: '#282c35' } : {}}
+        className={sideNavbar ? 'navbar-links  navbar-active' : 'navbar-links'}
       >
-        <div className="navbar-children">Topics</div>
-      </Link>
-      <div className="toggle-button navbar-children">
+        <li className={sideNavbar ? 'individual-links0' : ''}>
+          <Link className="link-style" to="/home">
+            Home
+          </Link>
+        </li>
+
+        <li className={sideNavbar ? 'individual-links1' : ''}>
+          <Link className="link-style" to="/about">
+            About
+          </Link>
+        </li>
+
+        <li className={sideNavbar ? 'individual-links2' : ''}>
+          <Link className="link-style" to="/topics">
+            Topics
+          </Link>
+        </li>
+      </ul>
+      <div onClick={handleNavbar} className="burger">
+        <div className="line1"></div>
+        <div className="line1"></div>
+        <div className="line1"></div>
+      </div>
+      <div className="toggle-button">
         <input
           type="checkbox"
           className="checkbox"

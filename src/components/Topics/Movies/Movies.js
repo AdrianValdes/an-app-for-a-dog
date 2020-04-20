@@ -15,16 +15,12 @@ function Movies() {
   useEffect(() => {
     fetchMovies();
   }, []);
-
+  console.log(movies);
   return (
-    <ul className="listed-elements">
+    <ul className="listed-elements main-container ">
       {movies.map(({ title, id }) => (
         <li key={id}>
-          {' '}
-          <Link
-            style={{ color: 'inherit', textDecoration: 'inherit' }}
-            to={`/movie/${id}`}
-          >
+          <Link className="link-style" to={`/movie/${id}`}>
             {title}
           </Link>
         </li>

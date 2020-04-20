@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 
 function PeopleDetail({ match }) {
   const [onePeople, setOnePeople] = useState({});
-  const fecthOnePeople = async () => {
+  const fetchOnePeople = useCallback(async () => {
     const fetchPeopleDetail = await fetch(
       `https://ghibliapi.herokuapp.com/people/${match.params.id}`
     );
@@ -11,12 +11,12 @@ function PeopleDetail({ match }) {
     console.log(onePeopleDetail);
 
     setOnePeople(onePeopleDetail);
-  };
+  }, [match.params.id]);
 
   useEffect(() => {
-    fecthOnePeople();
-  }, []);
-
+    fetchOnePeople();
+  }, [fetchOnePeople]);
+  console.log(onePeople);
   return (
     <div>
       <div>Name: {onePeople.name}</div>

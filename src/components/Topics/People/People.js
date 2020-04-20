@@ -18,16 +18,12 @@ function People() {
 
   return (
     <div>
-      <ul className="listed-elements">
+      <ul className="listed-elements main-container">
         {people.map(({ name, id }) => {
           return (
             <li key={id}>
-              <Link
-                style={{ color: 'inherit', textDecoration: 'inherit' }}
-                to={`/people/${id}`}
-              >
-                {' '}
-                {name}{' '}
+              <Link className="link-style" to={`/people/${id}`}>
+                {name}
               </Link>
             </li>
           );
